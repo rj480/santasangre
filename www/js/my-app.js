@@ -1,8 +1,9 @@
 // Initialize app
 var myApp = new Framework7({
     material:true,
-    swipePanel:'both'
+    swipePanel:'both',
 
+   
 });
 
 
@@ -69,6 +70,7 @@ error: function(data){
     });
 
 myApp.onPageInit('trabajos', function (page) {
+
    $$.ajax({
     type: "GET",
     url: "http://192.168.1.9/SangreCorporal/public/consulta/trabajo",        

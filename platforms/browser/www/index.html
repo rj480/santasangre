@@ -105,7 +105,14 @@
     <div class="views">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
-            <!-- Top Navbar-->
+         
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                       <!-- Top Navbar-->
             <div class="navbar">
                 <div class="navbar-inner">
                     <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
@@ -119,11 +126,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-            <div class="pages navbar-through toolbar-through">
-                <!-- Page, "data-page" contains page name -->
-                <div data-page="index" class="page">
-                    <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
                             <h1>hola mundo</h1>                    
@@ -141,6 +143,9 @@
                 </div>
             </div>
         </div>
+
+
+        
     </div>
 
 
